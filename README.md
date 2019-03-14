@@ -13,6 +13,11 @@ This is a review of the [Oregon HazVu: Statewide Geohazard Viewer][1] created by
 
 ## Body:
 
+**Data Sources:**
+
+The interactive HazVu map contains multiple different data files including basemap raster tile layers.
+
+
 **Basemaps:**
 
 HazVu opens with a standard gray canvas basemap from ESRI but has several basemaps compiled within a gallery for the customization of the user’s experience. The basemap inventory contains canvas maps, satellite imagery, topographic/terrain, and open street maps.
