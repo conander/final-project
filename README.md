@@ -2,6 +2,7 @@
 
 >Critique by Connor Anderson
 
+
 ## Introduction:
 
 This is a review of the [Oregon HazVu: Statewide Geohazard Viewer][1] created by the Department of Geology and Mineral Industries (DOGAMI) on October 1, 2012, using the ESRI ArcGIS server. HazVu is meant to provide the public with an interactive map that shows the locations of many different geologic hazards within the state of Oregon. Anyone can search for a place or address to view the geohazards that are likely to affect the area. For instance, the user can search their address and overlay the Earthquake Hazard layer to see the severity of the expected earthquake shake surrounding their home.
@@ -52,6 +53,11 @@ The map could include more numerical data or make data retrieval easier. I would
 **Take-home message:**
 The data provided should not be used for professional purposes but rather be used by the public to learn more about how different geologic hazards might affect you and your surroundings.
 
+---
+## References:
+
+1) HazVU Intro page: https://www.oregongeology.org/hazvu/
+2) DOGAMI HazVu Map: https://gis.dogami.oregon.gov/maps/hazvu/
 
 
 [1]:  https://gis.dogami.oregon.gov/maps/hazvu/ "DOGAMI HazVu Map"
