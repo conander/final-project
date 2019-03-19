@@ -5,7 +5,7 @@
 
 ## Introduction:
 
-This is a review of the [Oregon HazVu: Statewide Geohazard Viewer][1] created by the Department of Geology and Mineral Industries (DOGAMI) on October 1, 2012, using the ESRI ArcGIS server. HazVu is meant to provide the public with an interactive map that shows the locations of many different geologic hazards within the state of Oregon. Anyone can search for a place or address to view the geohazards that are likely to affect the area. For instance, the user can search their address and overlay the Earthquake Hazard layer to see the severity of the expected earthquake shake surrounding their home.
+This is a review of the [Oregon HazVu: Statewide Geohazard Viewer][1] created by the Department of Geology and Mineral Industries (DOGAMI) on October 1, 2012, using the ESRI ArcGIS server. HazVu is meant to provide the public with an interactive map that shows the locations of many different geologic hazards within the state of Oregon. Anyone can search for a place or address to view the geohazards that are likely to affect the area. For instance, the user can search their address and overlay the Earthquake Hazard layer to see the severity of the expected earthquake shake surrounding their home. The web map uses various libraries including javascript (js), cascading style sheets (css), and HTML to create the hazard map with several basic map functions (search bar, clickable popups, etc.).
 
 ![](img/HazVu_DOGAMI_EQ.jpg)
 >Fig.1: Earthquake Hazard layer for the state of Oregon.
@@ -13,9 +13,17 @@ This is a review of the [Oregon HazVu: Statewide Geohazard Viewer][1] created by
 
 ## Body:
 
+**Systemic Architecture:**
+
+The architecture of the interactive HazVu map begins with a web client search (Google Chrome). This search brings you to the Oregon Department of Geology and Mineral Industries (DOGAMI) GIS hazards web server (gis.dogami.oregon.gov). The DOGAMI web server then takes the user to the ESRI ArcGIS Server that host the HazVu iteractive map (geo.maps.arcgis.com).
+
+**Web Map Design:**
+
+The web maps design is streamline and easy to use. However, I believe the map can be better organized. All the web map’s interactive elements are piled up in the upper left-hand corner and could benefit from being spread out in a more organized layout across the window. Other than layout organization, this map design makes it easy for users to explore the map and gain more knowledge about Oregon’s various geohazards.
+
 **Data Sources:**
 
-The interactive HazVu map contains multiple different data files including basemap raster tile layers.
+The interactive HazVu map mostly contains vector data files. The various hazard layers include vector JSON files from DOGAMI or other organizations that monitor the natrual hazards of Oregon. The provided basemap layers are in the form of vector tile layers (ArcGISTiledMapServiceLayer) rather than raster tile layers.
 
 
 **Basemaps:**
@@ -51,6 +59,10 @@ The map provides various interactive tools to aid in understanding the subject m
 
 The web map has several elements including a zoom tool and search bar on the upper left, a scale bar and coordinate display on the lower left, an inset overview map on the lower right, and a legend menu that loads beneath the search bar once a thematic layer is selected.
 
+**Responsive Design:**
+
+This specific map does support a responsive design. The user can explore the hazard map on a desktop computer as well as their mobile devices (phone or tablet).
+
 
 ## Discussion & Conclusion:
 
@@ -58,7 +70,7 @@ The Oregon HazVu map provides the audience with user-friendly tools to create an
 
 **Any room for future development?**
 
-The map could include more numerical data or make data retrieval easier. I would like to see them add a fixed legend to the upper right corner of the screen that updates to whatever layers are active. Otherwise, it seems well developed and even includes a link for a help/information page.
+The map could include more numerical data and make data retrieval easier by adding links to data sources within the hazard layers or clickable popups. I would also like to see them add a fixed legend to the upper right corner of the screen that updates to whatever layers are active. The search function should also be modified so the search bar drop down menu disappears after the search begins (after clicking the search button). Otherwise, it seems well developed and even includes a link to a well organized help/information page. 
 
 **Take-home message:**
 
